@@ -15,10 +15,10 @@ def webhook():
     
     update:Update = Update.de_json(data, bot)
 
-    chat_id = update.messages.chat_id
+    chat_id = update.message.chat_id
     text = update.messages.text
 
     bot.send_message(chat_id, text)
-    # print(data)
+    print(chat_id)
 
     return "Assalomu alaykum"
