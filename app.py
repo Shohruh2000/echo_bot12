@@ -16,7 +16,7 @@ def webhook():
     update:Update = Update.de_json(data, bot)
 
     chat_id = update.message.chat_id
-    text = update.messages.text
+    text = update.message.text
 
     bot.send_message(chat_id, text)
     print(chat_id)
