@@ -12,7 +12,7 @@ bot = Bot(TOKEN)
 
 def webhook():
     if request.method == 'GET':
-        return 'Assalomu alaykum'
+        return 'Helo World'
     elif request.method == 'POST':
 
         data = request.get_json(force=True)
